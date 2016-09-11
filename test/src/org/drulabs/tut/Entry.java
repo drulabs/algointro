@@ -22,23 +22,6 @@ public class Entry {
 				System.out.println(String.format("supports multicast?: %s", netIf.supportsMulticast()));
 				displayAddresses(false, netIf);
 
-				// List<NetworkInterface> subNIs =
-				// Collections.list(netIf.getSubInterfaces());
-				// for (NetworkInterface subni : subNIs) {
-				// System.out.println("sub interfaces...");
-				// System.out.println(String.format("\t" + (++i) + "#Display
-				// name: %s", subni.getDisplayName()));
-				// System.out.println(String.format("\t" + "is virtual?: %s",
-				// subni.isVirtual()));
-				// System.out.println(String.format("\t" + "is loopback?: %s",
-				// subni.isLoopback()));
-				// System.out.println(String.format("\t" + "is up and running?:
-				// %s", subni.isUp()));
-				// System.out.println(String.format("\t" + "supports multicast?:
-				// %s", subni.supportsMulticast()));
-				// displayAddresses(true, netIf);
-				// }
-
 				System.out.println();
 			}
 		} catch (SocketException e) {
